@@ -1,4 +1,5 @@
-   const users = [
+   alert("USER IS THE BEST TESTER IN THE WORLD!");
+const users = [
       { email: "hammad", password: "pass123" },
       { email: "farina", password: "pass123" },
       { email: "zunira", password: "pass123" }

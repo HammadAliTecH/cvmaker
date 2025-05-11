@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cv_maker by hz</title>
+    <style>
+        .box1{
+            
+            box-shadow: 0 0 5px gray;
+            text-align: center;
+             
+        }
+        .box2{
+       
+            box-shadow: 0 0 5px gray;
+        }
+        .box3{
+          height: 100px;
+          width: 100%;
+          background-color: #B2E0D6;
+        }
+        h2{
+            text-align: center;
+        }
+        input{
+            background-color: #36454F;
+            border-color: #B2E0D6;
+            border-radius: 40px;
+     
+            
+        }
+        label:hover{
+             cursor: pointer;
+             transition:  0.3s ease;
+            text-decoration: underline;
+        }
+            input:hover{
+             cursor: pointer;
+             transition:  0.3s ease;
+             box-shadow: 0 0 10px #B2E0D6;
+        }
+        .input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+
+   
+    
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: white;
+   
+}
+
+@media (min-width:992px){
+
+}
+input, textarea, select {
+        background-color: #36454F;
+        color: white;
+        border: 1px solid #ccc;
+        width: 100%; /* full width for smaller screens */
+   
+        box-sizing: border-box;
+        padding: 8px;
+        border-color: #B2E0D6;
+        border-radius: 40px;
+       
+    }
+@media only screen and (max-width: 575.98px) {
+  input,
+  textarea,
+  select {
+    width: 100% !important;
+    border-radius: 40px;
+  }
+
+  #address,
+  .bord {
+    width: 100% !important;
+  }
+
+  img#imagePreview {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  table {
+    width: 100% !important;
+  }
+
+  td {
+    display: block;
+    width: 100%;
+  }
+
+  /* Remove default Bootstrap gutters for small screens */
+  .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .col-12,
+  .col-sm-12,
+  .col-md-12,
+  .col-lg-6 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .card {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+input::placeholder{
+    color: white;
+    opacity: 10px;
+     opacity: 0.5;
+     padding-left: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container-fluid" style="background-color: black;">
+        <div class="container" >
+            <div class="row">
+                <div class=" col-12 col-lg-12 col-md-12 col-sm-12 ">
+                    <div class="box1 mt-5" style="background-color: #B2E0D6; color:#36454F;">
+                        <h1 style="font-weight: bold; color: #36454F;">MAKE YOUR CV</h1>
+                        <p style="text-decoration: underline;">(IN EASY STEPS)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-4 mb-5"style= " background-color: #36454F;">
+                <h2 class="pt-3" style="color: #B2E0D6; text-decoration: underline;">Enter Your Following Details</h2>
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                      <div class="card ms-lg-4 mt-4" style="background-color: #36454F;  color: #B2E0D6; box-shadow: 0 0 20px #B2E0D6; border-radius: 15px;">
+                        <div class="card-body">
+                            <table style="width: 100%; text-align: center;  border-collapse: separate; ">
+                                <tr>
+                                    <td colspan="2" >
+                                        <label class="mt-2" style="display: block; font-weight: bold; color: #B2E0D6;">Your Image:</label>
+                                        <input type="file" id="image" accept="image/*">
+                                        <img class="mt-2 " id="imagePreview" style="display: none; width: 200px; height: auto;">
+                                    </td>
+                                </tr>
+                                
+                              
+                            
+                                <!-- Wrapper div to ensure labels are centered above inputs -->
+                                <tr >
+                                    <td colspan="2">
+                                        <div class="input-group">
+                                            <label for="name" class="mt-3" style="color: #B2E0D6;">Your Name:</label>
+                                            <input type="text" id="name" placeholder="Your Name" style="border-color: #B2E0D6; border-radius: 40px; " >
+                                        </div>
+                                    </td>
+                                </tr>
+                            
+                                <tr>
+                                    <td colspan="2">
+                                        <div class="input-group">
+                                            <label for="status" style="color: #B2E0D6;">Your Current Status:</label>
+                                            <input type="text" id="status" placeholder="Study/Designation" style="border-radius: 40px;">
+                                        </div>
+                                    </td>
+                                </tr>
+                            
+                                <tr>
+                                    <td colspan="2">
+                                        <div class="input-group">
+                                            <label for="contact" style="color: #B2E0D6;">Your Contact No:</label>
+                                            <input type="tel" id="contact" placeholder="Cell Number" style="border-radius: 40px;">
+                                        </div>
+                                    </td>
+                                </tr>
+                            
+                                <tr>
+                                    <td colspan="2">
+                                        <div class="input-group">
+                                            <label for="gmail" style="color: #B2E0D6; border-radius: 40px;">Your Gmail Address:</label>
+                                            <input type="email" id="gmail" placeholder="@gmail.com" style="border-radius: 40px;">
+                                        </div>
+                                    </td>
+                                </tr>
+                            
+                                <tr>
+                                    <td colspan="2">
+                                        <div class="input-group">
+                                            <label for="address" style="color: #B2E0D6;">Your Postal/Home Address:</label>
+                                            <textarea id="address" style="height: 100px;  width: 380px; border-radius: 0px;"  ></textarea>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr >
+  <td colspan="2" style="text-align: center; font-weight: bold; font-size: 16px; padding: 10px ;" >
+    Your Skills Set
+  </td>
+</tr>
+                            <tr>
+  <td colspan="2" style="border: 1px solid #B2E0D6; padding: 10px; border-radius: 15px;" class="pt-4">
+    <div class="input-group mt-3" style="display: flex; flex-direction: column; align-items: center;">
+
+      <input type="text" id="skill1" placeholder="1st---Skill" style="margin-bottom: 8px;  border-radius: 40px;">
+      <input type="text" id="skill2" placeholder="2nd---Skill" style="margin-bottom: 8px;  border-radius: 40px;">
+      <input type="text" id="skill3" placeholder="3rd---Skill" style="margin-bottom: 8px;  border-radius: 40px;">
+      <input type="text" id="skill4" placeholder="4th---Skill" style="margin-bottom: 8px;  border-radius: 40px;">
+      <input type="text" id="skill5" placeholder="5th---Skill" style="margin-bottom: 8px;  border-radius: 40px;">
+      <input type="text" id="skill6" placeholder="6th---Skill" style=" border-radius: 40px;">
+    </div>
+  </td>
+</tr>
+
+<tr >
+  <td colspan="2" style="text-align: center; font-weight: bold; font-size: 16px; padding: 10px ;"  >
+    Your Hobbies
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2" style="   border: 1px solid #B2E0D6; padding: 10px; border-radius: 15px;" class="pt-4">
+    <div class="input-group" style="display: flex; flex-direction: column; align-items: center;">
+      
+      <input type="text" id="hobby1" placeholder="1st---Hobby" style="margin-bottom: 8px;  border-radius: 40px; ">
+      <input type="text" id="hobby2" placeholder="2nd---Hobby" style="margin-bottom: 8px;  border-radius: 40px;">
+      <input type="text" id="hobby3" placeholder="3rd---Hobby" style=" border-radius: 40px;">
+    </div>
+  </td>
+</tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <div class="input-group mt-4" >
+                                            <label for="gmail" style="color: #B2E0D6;">Select Languages:</label>
+                                            <div style="display: inline;">
+                                            <select name=""  class="" id="language1">
+                                                <option value="">Select Language+LVL</option>
+                                                <option value="ENGLISH---Basic">ENGLISH---Basic</option>
+                                                <option value="ENGLISH---Moderate">ENGLISH---Moderate</option>
+                                                <option value="ENGLISH---Proficient">ENGLISH---Proficient</option>
+                                            </select>
+                                            <select name="" id="language2"  class="mt-3" >
+                                                <option value="">Select Language+LVL</option>
+                                                <option value="URDU---Basic">URDU---Basic</option>
+                                                <option value="URDU---Moderate">URDU---Moderate</option>
+                                                <option value="URDU---Proficient">URDU---Proficient</option>
+                                            </select>
+                                        </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                        </div>
+                      </div>
+                    </div>
+                    <!--   part2-->
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                      <div class="card me-lg-4 mb-5 mt-4 " style="border: none; background: transparent; " >
+                        <div class="card-body " style="background-color: #36454F; color: #B2E0D6; box-shadow: 0 0 15px #B2E0D6; border: none; border-radius: 15px; ">
+                            <table style="width: 100%; text-align: center; border-collapse: separate;">
+                                <tr>
+                                    <td colspan="2">
+                                        <label class="mt-2" for="" style="display: block; text-align: center; font-weight: bold; color: #B2E0D6;">Enter Profile Description:</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <textarea class="mt-3 mb-3 bord" name="" id="profile" style="display: inline; width: 380px; height: 100px; border-radius: 0px;"></textarea>
+                                    </td>
+                                </tr>
+                            <tr>
+  <td colspan="2" style="text-align: center; font-weight: bold; font-size: 16px; padding: 10px ;">
+    Your Experience:
+  </td>
+</tr>
+                            <tr>
+                             <td colspan="2"  style="border: 1px solid #B2E0D6; padding: 10px; border-radius: 15px;">
+                            <!-- Inputs and labels inside a centered div -->
+                            <div class="pb-2" style="display: flex; flex-direction: column; align-items: center; margin-top: 10px;">
+                             <input class="mt-3 bord" type="text" placeholder="Heading" id="heading">
+                               <input class="mt-3 bord" type="text" placeholder="Company Name-Country" id="company">
+
+                            <label for="start-date" style="margin-top: 10px;">Starting Date:</label>
+                             <input type="date" class="bord" id="startdate" placeholder="Starting Date">
+ 
+                              <label for="closing-date" style="margin-top: 10px;">Closing Date:</label>
+                               <input type="date" class="bord" id="closing-date" placeholder="Closing Date">
+
+                                <input class="mt-3 bord" type="text" placeholder="STEP-1" id="step1">
+                                 <input class="mt-3 bord" type="text" placeholder="STEP-2" id="step2">
+                              <input class="mt-3 bord" type="text" placeholder="STEP-3" id="step3">
+                                <input class="mt-3 bord" type="text" placeholder="STEP-4" id="step4">
+                                </div>
+                                   </td>
+                                  </tr>
+                               
+                                
+                                <!-- Education Section Heading -->
+<tr >
+  <td colspan="2" style="text-align: center; font-weight: bold; font-size: 16px; padding: 10px ;" >
+    Your Education
+  </td>
+</tr>
+
+<!-- 1st Degree Box -->
+<tr>
+  <td colspan="2" style="border: 1px solid #B2E0D6; padding: 10px; border-radius: 15px;" >
+    <div style="display: flex; flex-direction: column; align-items: center;" >
+      <input class="mt-3 bord" type="text" placeholder="1st-Degree Name" id="degree1">
+      
+      <label for="edu-start-1" style="margin-top: 10px;">Starting Date:</label>
+      <input type="date" class="bord" id="edu-start-1" placeholder="Starting Date">
+      
+      <label for="edu-end-1" style="margin-top: 10px;">Closing Date:</label>
+      <input type="date" class="bord" id="edu-end-1" placeholder="Closing Date">
+      
+      <input class="mt-3 bord" type="text" placeholder="University/College Name" id="college1">
+    </div>
+  </td>
+</tr>
+
+<!-- 2nd Degree Box -->
+<tr>
+  <td colspan="2" style="border: 1px solid #B2E0D6; padding: 10px; border-radius: 15px;">
+    <div style="display: flex; flex-direction: column; align-items: center;">
+      <input class="mt-3 bord" type="text" placeholder="2nd-Degree Name" id="degree2">
+      
+      <label for="edu-start-2" style="margin-top: 10px;">Starting Date:</label>
+      <input type="date" class="bord" id="edu-start-2" placeholder="Starting Date">
+      
+      <label for="edu-end-2" style="margin-top: 10px;">Closing Date:</label>
+      <input type="date" class="bord" id="edu-end-2" placeholder="Closing Date">
+      
+      <input class="mt-3 bord" type="text" placeholder="University/College Name" id="college2">
+    </div>
+  </td>
+</tr>
+                            </table>
+                            
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="container">
+              <div class="row  ">
+                <div class="col-12 col-lg-12 col-md-12 col-sm-12  ">
+                  <div class="box3 mb-3 d-flex justify-content-center align-items-center gap-4">
+                    <button class="btn my-button " style="background-color: #36454F; color: #B2E0D6;"  onmouseover="this.style.backgroundColor='black'" onmouseout="this.style.backgroundColor='#36454F'">PREVIEW THEME</button>
+                    <button onclick="saveData()" class="btn my-button" style="background-color: #36454F; color: #B2E0D6;" onmouseover="this.style.backgroundColor='black'" onmouseout="this.style.backgroundColor='#36454F'"  >GENERATE RESUME</button>
+                    <a class="btn my-button" style="background-color: #36454F; color: #B2E0D6;" href="job.html" onmouseover="this.style.backgroundColor='black'" onmouseout="this.style.backgroundColor='#36454F'">AGAIN REFILL</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+   
+   <script src="re.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

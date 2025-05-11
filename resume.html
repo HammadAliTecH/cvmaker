@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Print Stable Resume</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    body {
+      margin-bottom: 50px;
+      padding: 0;
+    }
+
+    .box1 {
+      background-color: #36454F;
+      height: 100%;
+      color: white;
+    }
+
+    .box2 {
+      background-color: white;
+      height: 100%;
+      border: 1px solid black;
+      color: black;
+    }
+
+    .imagebox {
+      height: 230px;
+      width: 230px;
+      border: 2px solid white;
+      border-radius: 50%;
+      background-image: url('34 KB File.jpg'); /* Ensure this image is accessible */
+      background-size: cover;
+      background-repeat: no-repeat;
+      
+    }
+
+    h2 {
+      color: white;
+    }
+
+    h3, h4 {
+      color: #B2E0D6;
+    }
+
+    li {
+      color: white;
+    }
+
+    button {
+      margin: 20px;
+    }
+
+@media print {
+  html, body {
+    margin: 20px;
+    padding: 0px;
+    height: 297mm;
+    width: 210mm;
+    overflow: hidden;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+
+  button {
+    display: none !important; /* Hides the print button */
+  }
+
+  #printArea {
+    width: 100%;
+    height: 100%;
+    transform: scale(0.94); /* Adjust scale if necessary */
+    transform-origin: top left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    display: block;
+  }
+
+  .container-fluid,
+  .container {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .row {
+    flex-wrap: nowrap !important;
+    height: 100% !important;
+  }
+
+  .box1,
+  .box2 {
+    height: auto !important;
+    overflow: visible !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  /* New styles to ensure box2 content fits */
+  .box2 {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: space-between; /* Distribute space evenly */
+    height: 100%; /* Allow it to take full height */
+  }
+
+  * {
+    page-break-before: avoid !important;
+    page-break-after: avoid !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+ .hh1{
+    margin-top: -50px;
+    margin-right: 0px;
+    margin-left: -30px;
+ }
+ .hh2{
+     margin-top: -40px;
+    margin-right: 0px;
+    margin-left: -30px;
+ }
+ .head1{
+    margin-top: -25px;
+    margin-right: 0px;
+    margin-left: -30px;
+ }
+  .head2{
+    margin-top: -25px;
+    margin-right: 0px;
+    margin-left: -30px;
+ }
+  .hh3{
+     margin-top: -50px;
+    margin-right: 0px;
+    margin-left: -30px;
+ }
+  .head3{
+    margin-top: 5px;
+    margin-right: 0px;
+    margin-left: -30px;
+ }
+   .head4{
+    margin-top: -10px;
+    margin-right: 0px;
+    margin-left: -30px;
+ }
+ .custom-print-col {
+    width: 66.6667% !important; /* This is col-lg-8 */
+    flex: 0 0 66.6667% !important;
+    max-width: 66.6667% !important;
+  }
+  .box2{
+    border: none;
+  }
+  .box3{
+    display: none !important;
+  }
+}
+.contact-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    .contact-icon {
+      color: #27ae60; /* Change this to any color you want */
+      margin-right: 10px;
+      font-size: 16px;
+    }
+.contact-icon {
+  color: #27ae60; /* This is a green tone */
+}
+  </style>
+</head>
+<body>
+ 
+      <div class="container-fluid">
+              <div class="row  ">
+                <div class="col-12 col-lg-12 col-md-12 col-sm-12 mt-5 ">
+                  <div class="box3 mb-3 d-flex justify-content-center align-items-center gap-4" style="background-color: #27ae60;">
+                    <a class="btn my-button " style="background-color: #36454F; color: #B2E0D6;"  onmouseover="this.style.backgroundColor='black'" onmouseout="this.style.backgroundColor='#36454F'" href="job.html">Back Page</a>
+                    <button onclick="window.print()" class="btn my-button" style="background-color: #36454F; color: #B2E0D6;" onmouseover="this.style.backgroundColor='black'" onmouseout="this.style.backgroundColor='#36454F'"  >Download as PDF</button>
+                    <a class="btn my-button" style="background-color: #36454F; color: #B2E0D6;" href="goodbye.html" onmouseover="this.style.backgroundColor='black'" onmouseout="this.style.backgroundColor='#36454F'">End Session</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+  <div id="printArea">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row g-0">
+          <div class="col-12 col-sm-5 col-md-5 col-lg-4">
+            <div class="box1 p-4">
+              <div class="d-flex flex-column align-items-center justify-content-start pt-3">
+                <div class="imagebox mt-5"></div>
+                <h2 class="pt-3" id="n1">Hammad Ali</h2>
+                <h4 id="s1">Software Developer</h4>
+              </div>
+              <h3 class="pt-5 ps-5 mt-2">CONTACT</h3>
+              <ul class="ps-5 ms-2">
+                <li id="cl1">+923072555161</li>
+                <li id="cl2">hammadmughal7979@outlook.com</li>
+                <li id="cl3">#1 road, city/state-0011</li>
+              </ul>
+              <h3 class="pt-5 ps-5">SKILLS</h3>
+              <ul class="ps-5 ms-2">
+                <li id="sl1">SQL Database Management</li>
+                <li id="sl2">Linux/Unix Command line</li>
+                <li id="sl3">Python</li>
+                <li id="sl4">C++</li>
+                <li id="sl5">Java</li>
+              </ul>
+              <h3 class="pt-5 ps-5">LANGUAGES</h3>
+              <ul class="ps-5 ms-2">
+                <li id="ll1">English---Proficient</li>
+                <li id="ll2">Urdu---Proficient</li>
+              </ul>
+              <h3 class="pt-4 ps-5">HOBBIES</h3>
+              <ul class="ps-5 ms-2">
+                <li id="hl1">Writing</li>
+                <li id="hl2">Cricket</li>
+                <li id="hl3">Music</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-7 col-md-7 col-lg-7 custom-print-col">
+            <div class="box2 p-4">
+                <div class="hh1">
+              <h2 class="mt-5 ms-5 pt-4 ps-3" style="color: #36454F;">PROFILE</h2>
+              <p class="mt-3 ms-5 me-3 ps-3" style="font-size: 17px;" id="profile1">I am a software engineer with experience in a variety of programming languages and a track record of delivering high-quality code. I am skilled in problem-solving and have a strong background in computer science. I am a strong communicator and enjoy working collaboratively with others.</p></div>
+               <div class="hh2">
+              <h2 class="mt-4 ms-5 ps-3 pt-5" style="color: #36454F;">WORK EXPERIENCE</h2></div>
+              <div class="head1">
+              <h5 class="mt-5 ms-5 ps-3" id="head1">Senior Software Developer</h5>
+              <p class="ms-5 ps-3">
+              <span id="company1">Company-Country</span>——
+              <span id="sd1">Jan 2022</span> / <span id="cd1">Dec 2023</span>
+              </p>
+              <ul class="lisit ms-5">
+                <li style="color: black; font-size: 17px;" id="st1">Developed and maintained software using Java, Python, and C++.</li>
+                <li style="color: black; font-size: 17px;" id="st2">Led cross-functional teams to deliver successful software projects.</li>
+                <li style="color: black; font-size: 17px;" id="st3">Write a work experience of a senior software engineer in bullet points.</li>
+              </ul>
+                 </div>
+                 <div class="head2">
+              <h5 class="mt-5  ms-5 ps-3">Web Developer</h5>
+              <p  class=" ms-5 ps-3">Company-Country — Jan 2021-Dec 2021</p>
+              <ul class="ms-4 ps-5 me-3">
+                <li style="color: black; font-size: 17px;">Developed and maintained web applications using HTML, CSS, JavaScript, and PHP.</li>
+                <li style="color: black; font-size: 17px;">Worked with cross-functional teams to gather requirements and design user interfaces.</li>
+              </ul>
+               </div>
+               <div class="hh3">
+              <h2 class="mt-5 pt-4 ms-5 ps-3" style="color: #36454F;">EDUCATION</h2></div>
+              <div class="head3">
+              <h5 class="mt-3 ms-5 ps-3" id="d1">Master in Software Engineering</h5>
+              <p class="ms-5 ps-3">
+               <span id="es1">Jan 2019</span>  ___  <span id="ee1">Dec 2020</span>
+              </p>
+              <p class="ms-5 ps-3" style="font-style: italic;" id="coll1">XYZ University, Bangalore</p>
+              </div>
+              <div class="head4">
+              <h5 class="mt-3 ms-5 ps-3" id="d2" >Bachelor in Computer Science</h5>
+              <p class="ms-5 ps-3">
+              <span id="es2">Jan 2019</span> ___ <span id="ee2">Dec 2020</span>
+              </p>
+              <p class="ms-5 ps-3" style="font-style: italic;" id="coll2">XYZ University, Bangalore</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="re.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

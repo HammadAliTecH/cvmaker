@@ -1,0 +1,124 @@
+    .left_box
+    {
+      
+        border-radius: 30px;
+        height: 95vh;
+        width: 100%;
+    }
+    input
+    {
+        border: darkgray;
+    }
+    .outer-input
+    {
+        border: 1px solid gray;
+        border-radius: 5px;
+        
+    }
+    .placeholder_color
+    {
+      border: none;
+      
+    }
+      .placeholder_color:focus
+    {
+      outline: none;
+      border: none;
+      box-shadow: none;
+      
+    }
+    .placeholder_color::placeholder
+    {
+        color: lightgrey;
+    }
+    .icon_style
+    {
+        background-color: white;
+        border: none;
+    }
+  .register_btn
+  {
+    background-color: orange;
+    border: none;
+    color: white;
+  }
+    .register_btn:hover
+  {
+    background-color: gray;
+    border: none;
+    color: white;
+  }
+
+    .register_btn_1
+  {
+    border: 1px solid orange;
+
+      color: orange;
+  }
+
+    .register_btn:active
+  {
+    background-color: gray;
+    color:  black;
+    border: none;
+  }
+
+/* Extra small devices (xs: <576px) */
+@media (max-width: 575.98px) {
+ .upper-box_2
+ {
+    margin-left: 100px;
+    margin-top: 70px;
+ }
+.forget_password
+  {
+    font-size: 12px;
+  }
+  .remember_me
+  {
+     font-size: 12px;   
+  }
+  .outer_company_box
+  {
+    display: flex;
+    justify-content: center;
+    padding-left: 90px;
+  }
+}
+
+/* Small devices (sm: ≥576px and <768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* Your CSS here */
+}
+
+/* Medium devices (md: ≥768px and <992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .forget_password
+  {
+    font-size: 12px;
+  }
+  .remember_me
+  {
+     font-size: 12px;
+  }
+  
+
+}
+
+/* Large devices (lg: ≥992px and <1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* Your CSS here */
+
+}
+
+/* Extra large devices (xl: ≥1200px and <1400px) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  /* Your CSS here */
+ 
+}
+
+/* XXL devices (xxl: ≥1400px) */
+@media (min-width: 1400px) {
+  /* Your CSS here */
+  
+}

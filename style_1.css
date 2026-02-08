@@ -1,0 +1,81 @@
+.left_box
+{
+    height: 95vh;
+    width: 95%;
+    background-color: rgb(146, 145, 145);
+    border-radius: 20px;
+}
+.logo-size
+{
+    height: 95px;
+}
+.login_heading {
+font-family: 'Helvetica Neue', Arial, sans-serif;
+font-weight: bold;
+letter-spacing: -0.2px;
+}
+.wave{
+  display:inline-block;
+  animation: wave 1.5s infinite;
+  transform-origin: 70% 70%;
+}
+.second_font{
+font-family:
+  "Segoe UI",
+  Roboto,
+  "Helvetica Neue",
+  Arial,
+  sans-serif;
+font-weight: 400;
+}
+.label_font
+{
+    font-size: 13px;
+}
+/*  */
+.outer-input
+    {
+        border: 1px solid gray;
+        border-radius: 5px;
+        
+    }
+    .placeholder_color
+    {
+      border: none;
+      
+    }
+      .placeholder_color:focus
+    {
+      outline: none;
+      border: none;
+      box-shadow: none;
+      
+    }
+    .placeholder_color::placeholder
+    {
+        color: lightgrey;
+    }
+    .icon_style
+    {
+        background-color: white;
+        border: none;
+    }
+    .utility_font{
+        font-size: 14px;
+    }
+    .login_color{
+        background-color: orange;
+        color: white;
+        box-shadow: none;
+    }
+    .login_color:focus{
+        background-color: orange;
+        color: white;
+        box-shadow: none;
+    }
+
+
+
+
+
+

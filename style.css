@@ -1,124 +1,951 @@
-    .left_box
-    {
-      
-        border-radius: 30px;
-        height: 95vh;
-        width: 100%;
-    }
-    input
-    {
-        border: darkgray;
-    }
-    .outer-input
-    {
-        border: 1px solid gray;
-        border-radius: 5px;
-        
-    }
-    .placeholder_color
-    {
-      border: none;
-      
-    }
-      .placeholder_color:focus
-    {
-      outline: none;
-      border: none;
-      box-shadow: none;
-      
-    }
-    .placeholder_color::placeholder
-    {
-        color: lightgrey;
-    }
-    .icon_style
-    {
-        background-color: white;
-        border: none;
-    }
-  .register_btn
-  {
-    background-color: orange;
-    border: none;
-    color: white;
-  }
-    .register_btn:hover
-  {
-    background-color: gray;
-    border: none;
-    color: white;
-  }
+@media (min-width: 1200px) and (max-width: 1499.98px) {
 
-    .register_btn_1
-  {
-    border: 1px solid orange;
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: small;
+}
 
-      color: orange;
-  }
+:root {
+    --primary-color: #377DFF;
+    --secondary-color: #2AAEB1;
+    --accent-color: #5C98F2;
+}
 
-    .register_btn:active
-  {
-    background-color: gray;
-    color:  black;
-    border: none;
-  }
-
-/* Extra small devices (xs: <576px) */
-@media (max-width: 575.98px) {
- .upper-box_2
- {
-    margin-left: 100px;
-    margin-top: 70px;
- }
-.forget_password
-  {
-    font-size: 12px;
-  }
-  .remember_me
-  {
-     font-size: 12px;   
-  }
-  .outer_company_box
-  {
+.navbar
+{
+    width: 100%;
     display: flex;
     justify-content: center;
-    padding-left: 90px;
-  }
+    margin-top: 30px;
+}
+.nav_section
+{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+.nav_left_side
+{
+    width: 70%;
+}
+.nav_right_side
+{
+    width: 40%;
+}
+.right_nav_items
+{
+    position: relative;
+    bottom: 10px;
+}
+.nav_option_list
+{
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    list-style-type: none;
+}
+.t_button
+{
+    border-radius: 50%;
+    border: none;
+    padding: 7px 10px 7px 10px;
+    background-color: var(--primary-color);
+    color: white;
+    position: relative;
+    bottom: 3px;
+}
+.nav_right_side
+{
+ display: flex;
+ justify-content: end;
+ gap: 20px;
+ padding-top: 15px;
+}
+.login_button
+{
+    padding: 8px 20px 8px 20px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+.idr_select
+{
+   
+    border: none;
+    font-weight: bold;
+}
+/* HEROS SECTION ----------------------------------------------------- */
+.visit_text
+{
+    color: var(--primary-color);
+}
+.book_text
+{
+    font-size: 18px;
+    color: var(--secondary-color);
+}
+.head_1{
+    font-size: 60px;
+    position: relative;
+    bottom: 30px;
+}
+.head_2{
+    font-size: 60px;
+    position: relative;
+    bottom: 70px;
+}
+.heros_area
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.heros_section
+{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+.hero_left_side
+{
+    width: 60%;
+    position: relative;
+    left: 40px;
+    top: 150px;
+
+}
+.hero_right_side
+{
+    width: 40%;
+}
+.loream_text
+{
+    width: 80%;
+    position: relative;
+    bottom: 100px;
+    color: gray;
+}
+.hero_image
+{
+    width: 90%;
+    height: 80vh;
+    border-radius: 25px;
+}
+.hero_right_side
+{
+    display: flex;
+    justify-content: end;
+}
+.heros_option_box
+{
+    width: 140%;
+    height: 110px;
+    background-color: white;
+    border-radius: 30px;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.heros_options
+{
+    display: flex;
+    justify-content: center;
+    gap: 110px;
+    list-style-type: none;
+    padding-top: 20px;
+}
+.icon_serach
+{
+    font-size: 20px;
+    text-align: center;
+}
+.icon_search_class
+{
+    background-color: var(--primary-color)  ;
+    color: white;
+    align-self: flex-end;
+    height: 100%;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 30px 30px 0px;
+}
+.option_bottom
+{
+    color: gray;
 }
 
-/* Small devices (sm: ≥576px and <768px) */
-@media (min-width: 576px) and (max-width: 767.98px) {
-  /* Your CSS here */
 }
-
-/* Medium devices (md: ≥768px and <992px) */
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .forget_password
-  {
-    font-size: 12px;
-  }
-  .remember_me
-  {
-     font-size: 12px;
-  }
-  
-
-}
-
-/* Large devices (lg: ≥992px and <1200px) */
+/* LARGE DEVICES----------------- */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  /* Your CSS here */
-
+   
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: small;
 }
 
-/* Extra large devices (xl: ≥1200px and <1400px) */
-@media (min-width: 1200px) and (max-width: 1399.98px) {
-  /* Your CSS here */
- 
+:root {
+    --primary-color: #377DFF;
+    --secondary-color: #2AAEB1;
+    --accent-color: #5C98F2;
 }
 
-/* XXL devices (xxl: ≥1400px) */
-@media (min-width: 1400px) {
-  /* Your CSS here */
+.navbar
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.nav_section
+{
+    width: 95%;
+    display: flex;
+    justify-content: center;
+}
+.nav_left_side
+{
+    width: 70%;
+}
+.nav_right_side
+{
+    width: 40%;
+}
+.right_nav_items
+{
+    position: relative;
+    bottom: 10px;
+}
+.nav_option_list
+{
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    list-style-type: none;
+}
+.t_button
+{
+    border-radius: 50%;
+    border: none;
+    padding: 7px 10px 7px 10px;
+    background-color: var(--primary-color);
+    color: white;
+    position: relative;
+    bottom: 3px;
+}
+.nav_right_side
+{
+ display: flex;
+ justify-content: end;
+ gap: 20px;
+ padding-top: 15px;
+}
+.login_button
+{
+    padding: 8px 20px 8px 20px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+.idr_select
+{
+   
+    border: none;
+    font-weight: bold;
+}
+/* HEROS SECTION ----------------------------------------------------- */
+.visit_text
+{
+    color: var(--primary-color);
+}
+.book_text
+{
+    font-size: 18px;
+    color: var(--secondary-color);
+}
+.head_1{
+    font-size: 60px;
+    position: relative;
+    bottom: 30px;
+}
+.head_2{
+    font-size: 60px;
+    position: relative;
+    bottom: 70px;
+}
+.heros_area
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.heros_section
+{
+    width: 95%;
+    display: flex;
+    justify-content: center;
+}
+.hero_left_side
+{
+    width: 60%;
+    position: relative;
+    left: 40px;
+    top: 150px;
+
+}
+.hero_right_side
+{
+    width: 40%;
+    display: flex;
+    justify-content: end;
+}
+.loream_text
+{
+    width: 80%;
+    font-size: 12px;
+    position: relative;
+    bottom: 100px;
+    color: gray;
+}
+.hero_image
+{
+    width: 100%;
+    height: 80vh;
+    border-radius: 25px;
+}
+.hero_right_side
+{
+    display: flex;
+    justify-content: end;
+}
+.heros_option_box
+{
+    width: 140%;
+    height: 100px;
+    background-color: white;
+    border-radius: 30px;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.heros_options
+{
+    display: flex;
+    justify-content: center;
+    gap: 110px;
+    list-style-type: none;
+    padding-top: 15px;
+}
+.icon_serach
+{
+    font-size: 20px;
+    text-align: center;
+}
+.icon_search_class
+{
+    background-color: var(--primary-color)  ;
+    color: white;
+    align-self: flex-end;
+    height: 100%;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 30px 30px 0px;
+}
+.option_bottom
+{
+    color: gray;
+}
+
+
+}
+/* MEDIUM DEVICES ------------------- */
+@media (min-width: 768px) and (max-width: 991.98px) {
   
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: small;
+}
+
+:root {
+    --primary-color: #377DFF;
+    --secondary-color: #2AAEB1;
+    --accent-color: #5C98F2;
+}
+
+.navbar
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.nav_section
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.nav_left_side
+{
+    width: 70%;
+}
+.nav_right_side
+{
+    width: 40%;
+}
+.right_nav_items
+{
+    position: relative;
+    bottom: 10px;
+}
+.nav_option_list
+{
+    display: flex;
+    flex-direction: row;
+    font-size: 11px;
+    gap: 24px;
+    list-style-type: none;
+}
+.t_button
+{
+    font-size: 11px;
+    border-radius: 50%;
+    border: none;
+    padding: 7px 10px 7px 10px;
+    background-color: var(--primary-color);
+    color: white;
+    position: relative;
+    bottom: 3px;
+}
+.nav_right_side
+{
+ display: flex;
+ justify-content: end;
+ gap: 20px;
+ padding-top: 15px;
+}
+.login_button
+{
+    padding: 8px 20px 8px 20px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    border: none;
+    font-size: 11px;
+    color: white;
+}
+.idr_select
+{
+   
+    border: none;
+    font-size: 11px;
+    font-weight: bold;
+}
+/* HEROS SECTION ----------------------------------------------------- */
+.visit_text
+{
+    color: var(--primary-color);
+}
+.book_text
+{
+    font-size: 18px;
+    color: var(--secondary-color);
+}
+.head_1{
+    font-size: 47px;
+    position: relative;
+    bottom: 30px;
+}
+.head_2{
+    font-size: 47px;
+    position: relative;
+    bottom: 70px;
+}
+.heros_area
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.heros_section
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.hero_left_side
+{
+    width: 60%;
+    position: relative;
+    left: 40px;
+    top: 150px;
+
+}
+.hero_right_side
+{
+    width: 40%;
+    display: flex;
+    justify-content: end;
+}
+.loream_text
+{
+    width: 80%;
+    font-size: 10px;
+    position: relative;
+    bottom: 100px;
+    color: gray;
+}
+.hero_image
+{
+    width: 100%;
+    height: 80vh;
+    border-radius: 25px;
+}
+.hero_right_side
+{
+    display: flex;
+    justify-content: end;
+}
+.heros_option_box
+{
+    width: 140%;
+    height: 90px;
+    background-color: white;
+    border-radius: 30px;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.heros_options
+{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    list-style-type: none;
+    padding-top: 10px;
+    font-size: 13px;
+}
+.icon_serach
+{
+    font-size: 20px;
+    text-align: center;
+}
+.icon_search_class
+{
+    background-color: var(--primary-color)  ;
+    color: white;
+    align-self: flex-end;
+    height: 100%;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 30px 30px 0px;
+}
+.option_bottom
+{
+    color: gray;
+}
+
+
+
+}
+/* SMALL DEVICES ----------------------------- */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: small;
+}
+
+:root {
+    --primary-color: #377DFF;
+    --secondary-color: #2AAEB1;
+    --accent-color: #5C98F2;
+}
+
+.navbar
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.nav_section
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.nav_left_side
+{
+    width: 70%;
+}
+.nav_right_side
+{
+    width: 40%;
+}
+.right_nav_items
+{
+    position: relative;
+    bottom: 10px;
+}
+.nav_option_list
+{
+    display: flex;
+    flex-direction: row;
+    font-size: 10px;
+    gap: 10px;
+    list-style-type: none;
+}
+.t_button
+{
+    font-size: 11px;
+    border-radius: 50%;
+    border: none;
+    padding: 7px 10px 7px 10px;
+    background-color: var(--primary-color);
+    color: white;
+    position: relative;
+    bottom: 3px;
+}
+.nav_right_side
+{
+ display: flex;
+ justify-content: end;
+ gap: 20px;
+ padding-top: 15px;
+}
+.login_button
+{
+    padding: 8px 20px 8px 20px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    border: none;
+    font-size: 11px;
+    color: white;
+}
+.idr_select
+{
+   
+    border: none;
+    font-size: 11px;
+    font-weight: bold;
+}
+/* HEROS SECTION ----------------------------------------------------- */
+.visit_text
+{
+    color: var(--primary-color);
+}
+.book_text
+{
+    font-size: 18px;
+    color: var(--secondary-color);
+}
+.head_1{
+    font-size: 47px;
+    position: relative;
+    bottom: 30px;
+}
+.head_2{
+    font-size: 47px;
+    position: relative;
+    bottom: 70px;
+}
+.heros_area
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.heros_section
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.hero_left_side
+{
+    width: 100%;
+    position: relative;
+    left: 40px;
+    top: 150px;
+
+}
+/* .hero_right_side
+{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+} */
+.loream_text
+{
+    width: 80%;
+    font-size: 10px;
+    position: relative;
+    bottom: 100px;
+    color: gray;
+}
+.hero_image
+{
+    width: 100%;
+    height: 80vh;
+    border-radius: 25px;
+}
+.hero_right_side
+{
+    display: none;
+    justify-content: end;
+}
+.heros_option_box
+{
+    width: 90%;
+    height: 90px;
+    background-color: white;
+    border-radius: 30px;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.heros_options
+{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style-type: none;
+    padding-top: 10px;
+    font-size: 12px;
+}
+.icon_serach
+{
+    font-size: 20px;
+    text-align: center;
+}
+.icon_search_class
+{
+    background-color: var(--primary-color);
+    color: white;
+    align-self: flex-end;
+    height: 100%;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 30px 30px 0px;
+}
+.option_bottom
+{
+    color: gray;
+}
+
+
+
+}
+/* EXTRA SMALL DEVICES- ------------------------ */
+@media (max-width: 575.98px) {
+
+
+    body {
+    font-family: "Poppins", sans-serif;
+    font-size: small;
+}
+
+:root {
+    --primary-color: #377DFF;
+    --secondary-color: #2AAEB1;
+    --accent-color: #5C98F2;
+}
+
+.navbar
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.nav_section
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.nav_left_side
+{
+    width: 70%;
+}
+.nav_right_side
+{
+    width: 30%;
+}
+.right_nav_items
+{
+    position: relative;
+    bottom: 10px;
+}
+.nav_option_list
+{
+    display: flex;
+    flex-direction: row;
+    font-size: 10px;
+    gap: 6px;
+    list-style-type: none;
+}
+.t_button
+{
+    font-size: 11px;
+    border-radius: 50%;
+    border: none;
+    padding: 7px 10px 7px 10px;
+    background-color: var(--primary-color);
+    color: white;
+    position: relative;
+    bottom: 3px;
+}
+.nav_right_side
+{
+ display: flex;
+ justify-content: end;
+ gap: 20px;
+ padding-top: 15px;
+}
+.login_button
+{
+    padding: 8px 20px 8px 20px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    border: none;
+    font-size: 11px;
+    color: white;
+}
+.idr_select
+{
+   
+    border: none;
+    font-size: 11px;
+    font-weight: bold;
+}
+/* HEROS SECTION ----------------------------------------------------- */
+.visit_text
+{
+    color: var(--primary-color);
+}
+.book_text
+{
+    font-size: 18px;
+    color: var(--secondary-color);
+}
+.head_1{
+    font-size: 47px;
+    position: relative;
+    bottom: 30px;
+}
+.head_2{
+    font-size: 47px;
+    position: relative;
+    bottom: 70px;
+}
+.heros_area
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.heros_section
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.hero_left_side
+{
+    width: 100%;
+    position: relative;
+    left: 40px;
+    top: 150px;
+
+}
+/* .hero_right_side
+{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+} */
+.loream_text
+{
+    width: 80%;
+    font-size: 10px;
+    position: relative;
+    bottom: 100px;
+    color: gray;
+}
+.hero_image
+{
+    width: 100%;
+    height: 80vh;
+    border-radius: 25px;
+}
+.hero_right_side
+{
+    display: none;
+    justify-content: end;
+}
+.heros_option_box
+{
+    width: 90%;
+    height: 80px;
+    background-color: white;
+    border-radius: 30px;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.heros_options
+{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style-type: none;
+    padding-top: 10px;
+    font-size: 10px;
+}
+.icon_serach
+{
+    font-size: 20px;
+    text-align: center;
+}
+.icon_search_class
+{
+    background-color: var(--primary-color);
+    color: white;
+    align-self: flex-end;
+    height: 100%;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 30px 30px 0px;
+}
+.option_bottom
+{
+    color: gray;
+}
 }
